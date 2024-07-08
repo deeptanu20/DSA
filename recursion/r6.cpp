@@ -3,7 +3,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int deleteMiddle(stack<int>&st,int n){
+void deleteMiddle(stack<int>&st,int n){
     stack<int>s;
      int count=0;
      while(count!=n/2){
@@ -38,7 +38,7 @@ int main(){
 
     int n=st.size();
 
-    cout<<deleteMiddle(st,n);
+    deleteMiddle(st,n);
     cout<<endl;
     print(st);
     
